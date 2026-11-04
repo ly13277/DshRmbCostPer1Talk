@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Last Turn Cost",
+    "description": "Shows the model spend of your last exchange (since your previous message) beside the permission control in the composer, converted to CNY at DeepSeek's peak/off-peak prices."
+  }
+}
