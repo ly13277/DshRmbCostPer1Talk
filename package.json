@@ -1,0 +1,51 @@
+{
+  "name": "dsh-turn-cost-pill",
+  "version": "0.1.0",
+  "description": "Shows the cost of the current session's latest exchange as a CNY amount next to the permission control in the DSH composer.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "usage",
+    "billing",
+    "cost"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ly13277/DshRmbCostPer1Talk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ly13277/DshRmbCostPer1Talk/issues"
+  },
+  "homepage": "https://github.com/ly13277/DshRmbCostPer1Talk#readme",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
